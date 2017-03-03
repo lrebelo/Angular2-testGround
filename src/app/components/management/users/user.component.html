@@ -1,0 +1,17 @@
+<div class="container">
+  <table class="table table-condensed" *ngIf="user">
+    <thead>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Department</th>
+      <th>Active</th>
+      <th>Lastadded</th>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">{{user.id}}</th>
+        <td><input [(ngModel)]="user.name" placeholder="name" /></td>
+      </tr>
+    </tbody>
+  </table>
+</div>

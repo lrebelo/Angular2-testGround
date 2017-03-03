@@ -1,0 +1,20 @@
+<div class="container">
+  <table class="table table-condensed">
+    <thead>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Department</th>
+      <th>Active</th>
+      <th>Lastadded</th>
+    </thead>
+    <tbody>
+      <tr *ngFor="let part of parts">
+        <th scope="row" [routerLink]="['/parts/', part.id ]">{{useri.id}}</th>
+        <td>{{part.name}}</td>
+        <td>{{part.department}}</td>
+        <td>{{part.active}}</td>
+        <td>{{part.lastadded}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
