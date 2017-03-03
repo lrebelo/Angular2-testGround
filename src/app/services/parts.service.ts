@@ -13,9 +13,9 @@ export class PartsService {
   constructor(private http: Http) { }
 
 
-//changed that catch to empty for tests
+//changed that catch to empty for tests NOTE: IT DOES NOT WORK so it was removed..
   getUsers(): Promise<Parts[]> {
-    return this.http.get(this.partsUrl).toPromise().then(response => response.json().data as Parts[]).catch();
+    return this.http.get(this.partsUrl).toPromise().then(response => response.json().data as Parts[]);
   }
 
 // +/- like for like from the angular2 tuturial
